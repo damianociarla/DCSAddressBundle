@@ -21,7 +21,7 @@
         "damianociarla/point-form-field-bundle": "dev-master",
         "damianociarla/select-city-form-field-bundle": "dev-master",
         "willdurand/geocoder-bundle": "3.*",
-        "creof/doctrine2-spatial": "dev-master",
+        "creof/doctrine2-spatial": "dev-master"
     },
     "autoload": {
         "psr-0": { "DCS\\Form\\SelectCityFormFieldBundle": "" }
