@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="fr" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="form.label.completeAddress">
+                <source>form.label.completeAddress</source>
+                <target>Adresse</target>
+            </trans-unit>
+            <trans-unit id="form.label.county">
+                <source>form.label.county</source>
+                <target>Comté</target>
+            </trans-unit>
+            <trans-unit id="form.label.countyCode">
+                <source>form.label.countyCode</source>
+                <target>Code de comté</target>
+            </trans-unit>
+            <trans-unit id="form.label.street">
+                <source>form.label.street</source>
+                <target>Rue</target>
+            </trans-unit>
+            <trans-unit id="form.label.streetNumber">
+                <source>form.label.streetNumber</source>
+                <target>Numéro de rue</target>
+            </trans-unit>
+            <trans-unit id="form.label.zipCode">
+                <source>form.label.zipCode</source>
+                <target>Code postal</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

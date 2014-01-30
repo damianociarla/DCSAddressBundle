@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <mapped-superclass name="DCS\AddressBundle\Entity\Address">
+
+        <field name="country" column="country" type="string" nullable="true" />
+
+        <field name="countryCode" column="country_code" type="string" nullable="true" />
+
+        <field name="region" column="region" type="string" nullable="true" />
+
+        <field name="county" column="county" type="string" nullable="true" />
+
+        <field name="countyCode" column="county_code" type="string" nullable="true" />
+
+        <field name="city" column="city" type="string" nullable="true" />
+
+        <field name="street" column="street" type="string" nullable="true" />
+
+        <field name="streetNumber" column="street_number" type="string" nullable="true" />
+
+        <field name="zipCode" column="zip_code" type="string" nullable="true" />
+
+        <field name="completeAddress" column="complete_address" type="string" nullable="true" />
+
+        <field name="point" column="point" type="Point" nullable="true" />
+
+    </mapped-superclass>
+
+</doctrine-mapping>

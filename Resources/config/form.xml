@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service id="dcs_address.form.base.factory" class="DCS\AddressBundle\Form\Factory\FormFactory">
+            <argument type="service" id="form.factory" />
+            <argument>%dcs_address.form.base.name%</argument>
+            <argument>%dcs_address.form.base.type%</argument>
+        </service>
+
+        <service id="dcs_address.form.compact.factory" class="DCS\AddressBundle\Form\Factory\FormFactory">
+            <argument type="service" id="form.factory" />
+            <argument>%dcs_address.form.compact.name%</argument>
+            <argument>%dcs_address.form.compact.type%</argument>
+        </service>
+
+        <service id="dcs_address.form.base.type" class="DCS\AddressBundle\Form\Type\BaseFormType">
+            <tag name="form.type" alias="dcs_address_base" />
+            <argument>%dcs_address.model.address.class%</argument>
+        </service>
+
+        <service id="dcs_address.form.compact.type" class="DCS\AddressBundle\Form\Type\CompactFormType">
+            <tag name="form.type" alias="dcs_address_compact" />
+            <argument>%dcs_address.model.address.class%</argument>
+        </service>
+
+    </services>
+</container>
