@@ -24,7 +24,7 @@
         "creof/doctrine2-spatial": "dev-master"
     },
     "autoload": {
-        "psr-0": { "DCS\\Form\\SelectCityFormFieldBundle": "" }
+        "psr-0": { "DCS\\AddressBundle": "" }
     },
-    "target-dir": "DCS/Form/SelectCityFormFieldBundle"
+    "target-dir": "DCS/AddressBundle"
 }
