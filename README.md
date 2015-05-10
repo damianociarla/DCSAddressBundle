@@ -16,6 +16,7 @@ $bundles = array(
   new DCS\AddressBundle\DCSAddressBundle(),
 );
 
+```
 Configuration
 ---
 
