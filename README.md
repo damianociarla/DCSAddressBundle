@@ -11,7 +11,6 @@ in `app/config/AppKernel.php`
 ```
 $bundles = array(
 //...
-  new Doctrine\Bundle\MongoDBBundle\DoctrineMongoDBBundle(),
   new \Bazinga\Bundle\GeocoderBundle\BazingaGeocoderBundle(),
   new DCS\AddressBundle\DCSAddressBundle(),
 );
