@@ -86,3 +86,8 @@ class Address extends BaseAddress
 }
 
 ```
+
+Basic usage
+---
+
+tbd
