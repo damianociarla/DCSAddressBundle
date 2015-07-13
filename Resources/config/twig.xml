@@ -10,6 +10,7 @@
 
     <services>
         <service id="dcs_address.twig.extension" class="%dcs_address.twig.extension.class%">
+            <argument type="service" id="event_dispatcher" />
             <tag name="twig.extension" />
         </service>
     </services>
