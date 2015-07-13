@@ -21,7 +21,7 @@ abstract class Address implements AddressInterface, AddressComponentInjectorInte
      */
     protected $component;
 
-    public function __construct($alias)
+    public function __construct($alias = null)
     {
         $this->alias = $alias;
     }
@@ -34,6 +34,12 @@ abstract class Address implements AddressInterface, AddressComponentInjectorInte
     public function getAlias()
     {
         return $this->alias;
+    }
+
+    public function setAlias($alias)
+    {
+        $this->alias = $alias;
+        return $this;
     }
 
     public function getComponent()

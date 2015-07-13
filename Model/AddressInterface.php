@@ -21,6 +21,14 @@ interface AddressInterface
     public function getAlias();
 
     /**
+     * Set alias
+     *
+     * @param string $alias
+     * @return AddressInterface
+     */
+    public function setAlias($alias);
+
+    /**
      * Get the associated AddressComponent
      *
      * @return AddressComponentInterface|null

@@ -36,6 +36,9 @@ abstract class AddressManager implements AddressManagerInterface
     {
         $this->persist($address);
 
+        $component = $address->getComponent();
+        $component->setAddress($address);
+
         $componentManager = $this->componentChain->getComponentManager($address->getAlias());
         $componentManager->save($address->getComponent());
     }
