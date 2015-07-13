@@ -16,8 +16,7 @@
     ],
     "require": {
         "php": ">=5.3.9",
-        "symfony/symfony": "2.7.*",
-        "creof/doctrine2-spatial": ">=0.0.1"
+        "symfony/symfony": "2.7.*"
     },
     "autoload": {
         "psr-0": { "DCS\\AddressBundle": "" }
