@@ -29,5 +29,6 @@ class DCSAddressExtension extends Extension
         $loader->load('form.xml');
         $loader->load('listener.xml');
         $loader->load('resolver.xml');
+        $loader->load('twig.xml');
     }
 }
