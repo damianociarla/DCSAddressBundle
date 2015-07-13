@@ -15,12 +15,8 @@
         }
     ],
     "require": {
-        "php": ">=5.3",
-        "symfony/symfony": "~2.3",
-        "damianociarla/geo-form-field-bundle": "~1.0",
-        "damianociarla/point-form-field-bundle": "~1.0",
-        "damianociarla/select-city-form-field-bundle": "~1.0",
-        "willdurand/geocoder-bundle": ">=3.0.1",
+        "php": ">=5.3.9",
+        "symfony/symfony": "2.7.*",
         "creof/doctrine2-spatial": ">=0.0.1"
     },
     "autoload": {

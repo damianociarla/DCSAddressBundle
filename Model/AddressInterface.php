@@ -1,0 +1,29 @@
+<?php
+
+namespace DCS\AddressBundle\Model;
+
+use DCS\AddressBundle\Component\AddressComponentInterface;
+
+interface AddressInterface
+{
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId();
+
+    /**
+     * Get alias
+     *
+     * @return string
+     */
+    public function getAlias();
+
+    /**
+     * Get the associated AddressComponent
+     *
+     * @return AddressComponentInterface|null
+     */
+    public function getComponent();
+}
