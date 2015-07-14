@@ -32,21 +32,22 @@ abstract class AddressManager implements AddressManagerInterface
     /**
      * @inheritDoc
      */
-    public function save(AddressInterface $address)
+    public function save(AddressInterface $address, $andFlush = true)
     {
-        $this->persist($address);
+        $this->persist($address, $andFlush);
 
         $component = $address->getComponent();
         $component->setAddress($address);
 
         $componentManager = $this->componentChain->getComponentManager($address->getAlias());
-        $componentManager->save($address->getComponent());
+        $componentManager->save($address->getComponent(), $andFlush);
     }
 
     /**
      * Save the address instance
      *
      * @param AddressInterface $address
+     * @param boolean $andFlush
      */
-    protected abstract function persist(AddressInterface $address);
+    protected abstract function persist(AddressInterface $address, $andFlush = true);
 }

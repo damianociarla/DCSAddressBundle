@@ -24,8 +24,9 @@ interface ComponentManagerInterface
      * Save the AddressComponent
      *
      * @param AddressComponentInterface $addressComponent
+     * @param boolean $andFlush
      */
-    public function save(AddressComponentInterface $addressComponent);
+    public function save(AddressComponentInterface $addressComponent, $andFlush = true);
 
     /**
      * Find one component by address

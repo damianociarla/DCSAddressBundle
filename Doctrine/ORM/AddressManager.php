@@ -31,10 +31,13 @@ class AddressManager extends BaseAddressManager
     /**
      * @inheritdoc
      */
-    public function persist(AddressInterface $address)
+    public function persist(AddressInterface $address, $andFlush = true)
     {
         $this->entityManager->persist($address);
-        $this->entityManager->flush();
+
+        if ($andFlush) {
+            $this->entityManager->flush();
+        }
     }
 
     /**

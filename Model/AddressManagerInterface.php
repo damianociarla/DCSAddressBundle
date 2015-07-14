@@ -23,8 +23,9 @@ interface AddressManagerInterface
      * Save the AddressComponent
      *
      * @param AddressInterface $address
+     * @param boolean $andFlush
      */
-    public function save(AddressInterface $address);
+    public function save(AddressInterface $address, $andFlush = true);
 
     /**
      * Find one address by id
