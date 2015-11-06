@@ -20,8 +20,8 @@
         "damianociarla/geo-form-field-bundle": ">=1.0",
         "damianociarla/point-form-field-bundle": ">=1.0",
         "damianociarla/select-city-form-field-bundle": ">=1.0",
-        "willdurand/geocoder-bundle": ">=3.0.1",
-        "creof/doctrine2-spatial": ">=0.0.1"
+        "willdurand/geocoder-bundle": "3.0.1",
+        "creof/doctrine2-spatial": "0.0.1"
     },
     "autoload": {
         "psr-0": { "DCS\\AddressBundle": "" }
