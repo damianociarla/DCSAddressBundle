@@ -4,10 +4,6 @@
 
     <mapped-superclass name="DCS\AddressBundle\Model\Address">
 
-        <id name="id" type="integer" column="id">
-            <generator strategy="AUTO" />
-        </id>
-
         <field name="alias" column="alias" type="string" nullable="false" />
 
     </mapped-superclass>

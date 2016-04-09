@@ -9,7 +9,7 @@ interface AddressInterface
     /**
      * Get id
      *
-     * @return int
+     * @return mixed
      */
     public function getId();
 

@@ -7,7 +7,7 @@ use DCS\AddressBundle\Component\AddressComponentInterface;
 abstract class Address implements AddressInterface, AddressComponentInjectorInterface
 {
     /**
-     * @var int
+     * @var mixed
      */
     protected $id;
 
